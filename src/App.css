@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+#root {
+    max-width: 450px;
+    margin: 0 auto;
+    background-image: url('./bg-img.png');
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bodyWrapper{
+    margin: 0 auto;
+    padding: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todoController {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 420px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todoInput {
+    border: 1px solid lightskyblue;
+    border-radius: 25px;
+    padding: 0.5rem;
+    width: 70%;
 }
 
-.App-link {
-  color: #61dafb;
+.addTodo {
+    border: 1px solid lightskyblue;
+    border-radius: 25px;
+    padding: 0.5rem 0.75rem;
+    margin-left: 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clearDone {
+    border: 1px solid lightskyblue;
+    border-radius: 25px;
+    padding: 0.5rem 0.75rem;
+    margin-left: 0.5rem;
+}
+
+.todoReport {
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 1rem 0;
+    color: #333;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    line-height: 1.5rem;
+}
+
+ul li input {
+    border: 1px solid lightskyblue;
+    border-radius: 25px;
 }
