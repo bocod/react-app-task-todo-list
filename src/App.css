@@ -1,13 +1,14 @@
 #root {
     max-width: 450px;
     margin: 0 auto;
-    background-image: url('./bg-img.png');
-
+    box-sizing: border-box;
 }
 
 .bodyWrapper{
     margin: 0 auto;
     padding: 1rem;
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url('./bg-img.png');
 }
 
 .todoController {
@@ -26,17 +27,23 @@
 }
 
 .addTodo {
+    width: 35px;
+    height: 35px;
     border: 1px solid lightskyblue;
     border-radius: 25px;
-    padding: 0.5rem 0.75rem;
     margin-left: 0.5rem;
+    background-color: #fff;
+    font-size: 1.5rem;
 }
 
 .clearDone {
+    width: 35px;
+    height: 35px;
     border: 1px solid lightskyblue;
     border-radius: 25px;
-    padding: 0.5rem 0.75rem;
     margin-left: 0.5rem;
+    background-color: #fff;
+    font-size: 1.5rem;
 }
 
 .todoReport {
@@ -46,16 +53,42 @@
     text-align: center;
 }
 
-ul {
+.ul-tasks {
     padding: 0;
 }
 
-li {
+.todoTask {
     list-style: none;
     line-height: 1.5rem;
+
 }
 
-ul li input {
-    border: 1px solid lightskyblue;
+input[type="checkbox"] {
+    border: 5px solid lightskyblue;
     border-radius: 25px;
+    padding-right: 3rem;
+}
+
+.task {
+    padding-left: 1rem;
+}
+
+footer {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+    padding: 3px 0;
+    display: flex;
+    flex-direction: row;
+    background-color: #888;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+    padding-left: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
 }

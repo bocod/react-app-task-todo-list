@@ -1,5 +1,6 @@
 import React,  { Fragment, useRef, useState, useEffect } from 'react';
 import { TodoList } from './components/TodoList';
+import { Footer } from './components/Footer';
 import { v4 as uuid } from 'uuid';
 import './App.css';
 
@@ -126,6 +127,7 @@ export function App() {
         <div className='todoReport'>Te quedan {todos.filter((todo) => !todo.completed).length} tareas pendientes!</div>
         <TodoList todos={ todos } toggleTodo={toggleTodo} />
         </div>
+        <Footer />
     </Fragment>
   );
 }

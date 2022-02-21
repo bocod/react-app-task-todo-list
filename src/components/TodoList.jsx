@@ -13,7 +13,7 @@ We use key for making easy to React making the DOM of components and identify th
 export function TodoList({ todos, toggleTodo }) {
     //For inserting JS code in JSX we use the {}
     return ( 
-        <ul>
+        <ul className="ul-tasks">
             { todos.map( (todo) => ( 
                 <TodoItem key={todo.id} todo={ todo } toggleTodo={toggleTodo} /> 
                 )

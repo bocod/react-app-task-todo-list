@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# To do list - React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## A 'Getting Started with Create React App' Project
+
+This project was made to apply basic learnings about React.
+It is a 'to do' list, where you can create new tasks, check as done, delete all done tasks. 
 
 ## Available Scripts
 
