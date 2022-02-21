@@ -1,6 +1,8 @@
 # To do list - React App
 
+Learning React by coding with React!
 
+[See it in action!](https://react-app-task-todo-list.herokuapp.com)
 ## A 'Getting Started with Create React App' Project
 
 This project was made to apply basic learnings about React.
