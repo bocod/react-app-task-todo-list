@@ -116,6 +116,10 @@ export function App() {
     setTodos(newTodos);
   }
 
+  const tasksLeftMsg  = `Te quedan ${todos.filter((todo) => !todo.completed).length} tareas pendientes!`;
+  const noTasksLeftMsg =  "No tienes tareas, qué tal si agregas alguna?";
+  const allCompleted = "Bravo! Has terminado todos tus pendientes!"
+
   return ( 
     <Fragment>
       <div className='bodyWrapper'>
@@ -124,7 +128,10 @@ export function App() {
           <button className='addTodo' onClick={handleTodoAdd}>+</button>
           <button className='clearDone' onClick={handleClearAll}>-</button>
         </div>
-        <div className='todoReport'>Te quedan {todos.filter((todo) => !todo.completed).length} tareas pendientes!</div>
+        <div className='todoReport'>
+          {todos.length > 0 ? (todos.filter(todo => !todo.completed).length === 0 ? allCompleted : tasksLeftMsg) : noTasksLeftMsg}
+          
+        </div>
         <TodoList todos={ todos } toggleTodo={toggleTodo} />
         </div>
         <Footer />
